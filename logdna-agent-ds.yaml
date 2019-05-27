@@ -1,15 +1,15 @@
 apiVersion: extensions/v1beta1
 kind: DaemonSet
 metadata:
-  name: logdna-agent
+  name: logdna-agent-ibpv2
 spec:
   template:
     metadata:
       labels:
-        app: logdna-agent
+        app: logdna-agent-ibpv2
     spec:
       containers:
-      - name: logdna-agent
+      - name: logdna-agent-ibpv2
         image: logdna/logdna-agent:latest
         imagePullPolicy: Always
         env:
